@@ -203,6 +203,7 @@ public:
     friend class ModeAcro;
     friend class ModeAcro_Heli;
     friend class ModeAltHold;
+    friend class ModeMaxAltHold;
     friend class ModeAuto;
     friend class ModeAutoTune;
     friend class ModeAvoidADSB;
@@ -947,6 +948,9 @@ private:
 #endif
 #endif
     ModeAltHold mode_althold;
+
+    ModeMaxAltHold mode_maxalthold;
+
 #if MODE_AUTO_ENABLED == ENABLED
     ModeAuto mode_auto;
 #endif

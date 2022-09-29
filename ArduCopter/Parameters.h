@@ -378,9 +378,13 @@ public:
 
         k_param_vehicle = 257, // vehicle common block of parameters
 
+        k_param_max_altHold_limit = 258,
+
         // the k_param_* space is 9-bits in size
         // 511: reserved
     };
+
+    AP_Int16 max_altHold_limit;
 
     AP_Int16        format_version;
 

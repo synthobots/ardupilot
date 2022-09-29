@@ -361,6 +361,8 @@ public:
     ///     this prevents integrator buildup
     void set_externally_limited_xy() { _limit_vector.x = _accel_target.x; _limit_vector.y = _accel_target.y; }
 
+    void set_altitude_limit(int limit) { _limit_vector.z =  limit;}
+
     // lean_angles_to_accel - convert roll, pitch lean angles to lat/lon frame accelerations in cm/s/s
     Vector3f lean_angles_to_accel(const Vector3f& att_target_euler) const;
 

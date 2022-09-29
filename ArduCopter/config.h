@@ -211,6 +211,11 @@
  # define NAV_GUIDED    !HAL_MINIMIZE_FEATURES
 #endif
 
+//Custom Mode
+#ifndef MODE_MAXALTHOLD_ENABLED 
+# define MODE_MAXALTHOLD_ENABLED ENABLED
+#endif
+
 //////////////////////////////////////////////////////////////////////////////
 // Acro - fly vehicle in acrobatic mode
 #ifndef MODE_ACRO_ENABLED
